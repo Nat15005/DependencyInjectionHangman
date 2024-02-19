@@ -41,13 +41,34 @@ principio de inversión de dependencias:
 
 1. Haga un fork del proyecto (no lo descargue directamente!).
 
+   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/96434037-7b80-41f6-a72b-b70f4d7d38c0)
+
+
 2. A partir del código existente, implemente sólo los cascarones del
    modelo antes indicado.
+
+   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/2450ed00-28a5-4b39-baf9-37c9f0e6e0d9)
+
+   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/78405c98-d148-4de7-b227-b8e1534d0b5e)
+
+   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/59876c8e-cab2-4fcc-bbb2-cc1c40cf44cd)
+
+   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/f57280e7-52a1-48c7-9059-ef3160c81667)
+
 
 3. Haga la especificación de los métodos calculateScore (de las tres
    variantes de GameScore), a partir de las especificaciones
    generales dadas anteriormente. Recuerde tener en cuenta: @pre,
    @pos, @param, @throws.
+
+   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/016c1616-0c26-4728-be21-bc12fc11073e)
+
+   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/b2f5150b-f434-4505-b3cf-aa14515c9523)
+
+   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/233e01c1-10a9-42f3-9a43-574927002a18)
+
+   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/56c78b89-a15b-4d93-9890-3d2c73e97f30)
+
 
 4. Haga commit de lo realizado hasta ahora. Desde la terminal:
 
@@ -55,37 +76,52 @@ principio de inversión de dependencias:
     git add .			
     git commit -m "especificación métodos"
     ```
+    
+   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/f385794e-97fd-4af7-b06e-8020d4c777ff)
+
+   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/beed1ab9-06cf-4f89-99c8-97625d477729)
+
 
 5. Actualice el archivo `pom.xml` e incluya las dependencias para la ultima versión de JUnit.
 
-6. Teniendo en cuenta dichas especificaciones, en la clase donde se
+   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/5a3d0e16-785b-4628-96f1-5b086570e4ab)
+
+
+7. Teniendo en cuenta dichas especificaciones, en la clase donde se
    implementarán las pruebas (GameScoreTest), en los
    comentarios iniciales, especifique las clases de equivalencia para
    las tres variantes de GameScore, e identifique
    condiciones de frontera.
 
-7. Para cada clase de equivalencia y condición de frontera, implemente
+   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/348a3c0f-da6b-4633-a729-0be3b2ee7c00)
+
+   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/10eac5d4-3018-4116-ba7c-c853215e4006)
+
+   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/104a405f-ed6d-416e-9fe9-489edeb8bac7)
+
+
+9. Para cada clase de equivalencia y condición de frontera, implemente
    una prueba utilizando JUnit.
 
-8. Haga commit de lo realizado hasta ahora. Desde la terminal:
+10. Haga commit de lo realizado hasta ahora. Desde la terminal:
 
     ```sh		
     git add .			
     git commit -m "implementación pruebas"
     ```
 
-9. Realice la implementación de los 'cascarones' realizados anteriormente.
+11. Realice la implementación de los 'cascarones' realizados anteriormente.
    Asegúrese que todas las pruebas unitarias creadas en los puntos anteriores
    se ejecutan satisfactoriamente.
 
-10. Al finalizar haga un nuevo commit:
+12. Al finalizar haga un nuevo commit:
 
     ```sh		
     git add .			
     git commit -m "implementación del modelo"
     ```
 
-11. Para sincronizar el avance en el respositorio y NO PERDER el trabajo, use
+13. Para sincronizar el avance en el respositorio y NO PERDER el trabajo, use
     el comando de GIT para enviar los cambios:
 
     ```sh
