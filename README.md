@@ -138,7 +138,7 @@ principio de inversión de dependencias:
     git commit -m "implementación del modelo"
     ```
 
-   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/0dcdd031-4e25-44dc-8462-4eb122c1e7d9)
+      ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/0dcdd031-4e25-44dc-8462-4eb122c1e7d9)
    
 
 12. Para sincronizar el avance en el respositorio y NO PERDER el trabajo, use
@@ -148,8 +148,9 @@ principio de inversión de dependencias:
     git push origin main
     ```
 
-    
+      ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/81b737ca-babc-43e2-8687-a1581794ff2d)
 
+    
 ### Parte II
 
 Actualmente se utiliza el patrón FactoryMethod
