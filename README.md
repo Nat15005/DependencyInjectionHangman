@@ -87,7 +87,7 @@ principio de inversión de dependencias:
    ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/5a3d0e16-785b-4628-96f1-5b086570e4ab)
 
 
-7. Teniendo en cuenta dichas especificaciones, en la clase donde se
+6. Teniendo en cuenta dichas especificaciones, en la clase donde se
    implementarán las pruebas (GameScoreTest), en los
    comentarios iniciales, especifique las clases de equivalencia para
    las tres variantes de GameScore, e identifique
@@ -100,33 +100,55 @@ principio de inversión de dependencias:
    ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/104a405f-ed6d-416e-9fe9-489edeb8bac7)
 
 
-9. Para cada clase de equivalencia y condición de frontera, implemente
+7. Para cada clase de equivalencia y condición de frontera, implemente
    una prueba utilizando JUnit.
 
-10. Haga commit de lo realizado hasta ahora. Desde la terminal:
+   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/3ec657f3-7f5d-4925-95b8-9f64d14c0be2)
+
+   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/bc68e9e6-b8f7-42c1-a3b0-35bddfda2546)
+
+   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/855f0868-64a2-4d57-aa85-ee7729549e67)
+
+
+9. Haga commit de lo realizado hasta ahora. Desde la terminal:
 
     ```sh		
     git add .			
     git commit -m "implementación pruebas"
     ```
 
-11. Realice la implementación de los 'cascarones' realizados anteriormente.
+    ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/f26f2a0a-0dcc-4129-97e1-399fa7ad0cd4)
+
+
+10. Realice la implementación de los 'cascarones' realizados anteriormente.
    Asegúrese que todas las pruebas unitarias creadas en los puntos anteriores
    se ejecutan satisfactoriamente.
 
-12. Al finalizar haga un nuevo commit:
+   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/5de8ec2c-7ecf-4f3c-b646-166c255c5ddc)
+
+   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/1849646c-08f6-4e87-a97f-38ef3637e415)
+
+   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/313c57d2-34cf-47f2-8226-3d04bf74a07a)
+
+
+11. Al finalizar haga un nuevo commit:
 
     ```sh		
     git add .			
     git commit -m "implementación del modelo"
     ```
 
-13. Para sincronizar el avance en el respositorio y NO PERDER el trabajo, use
+   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/0dcdd031-4e25-44dc-8462-4eb122c1e7d9)
+   
+
+12. Para sincronizar el avance en el respositorio y NO PERDER el trabajo, use
     el comando de GIT para enviar los cambios:
 
     ```sh
     git push origin main
     ```
+
+    
 
 ### Parte II
 
