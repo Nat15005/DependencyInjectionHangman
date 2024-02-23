@@ -18,7 +18,14 @@ public class PowerBonusScore implements GameScore {
      */
     @Override
     public int calculateScore(int correctCount, int incorrectCount) {
-
-        return 0;
+        if (correctCount < 0 || incorrectCount < 0) {
+            throw new IllegalArgumentException("Los conteos deben ser no negativos");
+        }
+        int score = 0;
+        for (int i = 1; i <= correctCount; i++) {
+            score += Math.pow(5, i);
+        }
+        score -= 8 * incorrectCount;
+        return Math.min(500, Math.max(0, score));
     }
 }

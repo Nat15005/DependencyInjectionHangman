@@ -17,6 +17,10 @@ public class BonusScore implements GameScore {
      */
     @Override
     public int calculateScore(int correctCount, int incorrectCount) {
-        return 0;
+        if (correctCount < 0 || incorrectCount < 0) {
+            throw new IllegalArgumentException("Los conteos deben ser no negativos");
+        }
+        int score = correctCount * 10 - incorrectCount * 5;
+        return Math.max(0, score);
     }
 }
