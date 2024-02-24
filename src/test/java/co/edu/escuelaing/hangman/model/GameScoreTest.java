@@ -2,6 +2,7 @@ package co.edu.escuelaing.hangman.model;
 
 import org.junit.jupiter.api.Test;
 import org.junit.Assert;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 
 /**
@@ -68,7 +69,7 @@ import org.junit.Assert;
 public class GameScoreTest {
 
     @Test
-    public void testOriginalScore() {
+    public void ShouldCalculateOriginalScore() {
         // Given
         OriginalScore originalScore = new OriginalScore();
 
@@ -86,7 +87,7 @@ public class GameScoreTest {
     }
 
     @Test
-    public void testBonusScore() {
+    public void ShouldCalculateBonusScore() {
         // Given
         BonusScore bonusScore = new BonusScore();
 
@@ -104,7 +105,7 @@ public class GameScoreTest {
     }
 
     @Test
-    public void testPowerBonusScore() {
+    public void ShouldCalculatePowerBonusScore() {
         // Given
         PowerBonusScore powerBonusScore = new PowerBonusScore();
 
@@ -118,8 +119,156 @@ public class GameScoreTest {
         // Then
         Assert.assertEquals(0, score1);    // CE1
         Assert.assertEquals(5, score2);    // CE2
-        Assert.assertEquals(22, score3);    // CE3
+        Assert.assertEquals(22, score3);   // CE3
         Assert.assertEquals(0, score4);    // CE4
         Assert.assertEquals(500, score5);  // CE5
     }
+
+    @Test
+    public void originalScoreShouldNotRewardCorrectLetters() {
+        // Given
+        OriginalScore originalScore = new OriginalScore();
+
+        // When
+        int score = originalScore.calculateScore(1, 0);
+
+        // Then
+        Assert.assertEquals(100, score); // No se debería bonificar las letras correctas
+    }
+    @Test
+    public void originalScoreShouldNotGoBelowZero() {
+        // Given
+        OriginalScore originalScore = new OriginalScore();
+
+        // When
+        int score = originalScore.calculateScore(0, 11);
+
+        // Then
+        Assert.assertEquals(0, score); // El puntaje mínimo es 0
+    }
+    @Test
+    public void bonusScoreShouldNotGoBelowZero() {
+        // Given
+        BonusScore bonusScore = new BonusScore();
+
+        // When
+        int score = bonusScore.calculateScore(0, 1);
+
+        // Then
+        Assert.assertEquals(0, score); // El puntaje mínimo es 0
+    }
+
+    @Test
+    public void bonusScoreShouldNotInitializeWith100Points() {
+        // Given
+        BonusScore bonusScore = new BonusScore();
+
+        // When
+        int score = bonusScore.calculateScore(0, 0);
+
+        // Then
+        Assert.assertNotEquals(100, score); // El puntaje no debe iniciar en 100
+    }
+
+    @Test
+    public void powerBonusScoreShouldNotInitializeWith100Points() {
+        // Given
+        PowerBonusScore powerBonusScore = new PowerBonusScore();
+
+        // When
+        int score = powerBonusScore.calculateScore(0, 0);
+
+        // Then
+        Assert.assertNotEquals(100, score); // El puntaje no debe iniciar en 100
+    }
+
+    @Test
+    public void powerBonusScoreShouldNotExceed500Points() {
+        // Given
+        PowerBonusScore powerBonusScore = new PowerBonusScore();
+
+        // When
+        int score = powerBonusScore.calculateScore(4, 0);
+
+        // Then
+        Assert.assertTrue(score <= 500); // El puntaje no debe exceder los 500 puntos
+    }
+    @Test
+    public void powerBonusScoreShouldNotGoBelowZero() {
+        // Given
+        PowerBonusScore powerBonusScore = new PowerBonusScore();
+
+        // When
+        int score = powerBonusScore.calculateScore(0, 1);
+
+        // Then
+        Assert.assertEquals(0, score); // El puntaje mínimo es 0
+    }
+
+    @Test
+    public void originalScoreShouldThrowExceptionForNegativeCorrectCount() {
+        // Given
+        OriginalScore originalScore = new OriginalScore();
+
+        // When / Then
+        assertThrows(IllegalArgumentException.class, () -> {
+            originalScore.calculateScore(-1, 0);
+        });
+    }
+
+    @Test
+    public void originalScoreShouldThrowExceptionForNegativeIncorrectCount() {
+        // Given
+        OriginalScore originalScore = new OriginalScore();
+
+        // When / Then
+        assertThrows(IllegalArgumentException.class, () -> {
+            originalScore.calculateScore(0, -1);
+        });
+    }
+
+    @Test
+    public void bonusScoreShouldThrowExceptionForNegativeCorrectCount() {
+        // Given
+        BonusScore bonusScore = new BonusScore();
+
+        // When / Then
+        assertThrows(IllegalArgumentException.class, () -> {
+            bonusScore.calculateScore(-1, 0);
+        });
+    }
+
+    @Test
+    public void bonusScoreShouldThrowExceptionForNegativeIncorrectCount() {
+        // Given
+        BonusScore bonusScore = new BonusScore();
+
+        // When / Then
+        assertThrows(IllegalArgumentException.class, () -> {
+            bonusScore.calculateScore(0, -1);
+        });
+    }
+
+    @Test
+    public void powerBonusScoreShouldThrowExceptionForNegativeCorrectCount() {
+        // Given
+        PowerBonusScore powerBonusScore = new PowerBonusScore();
+
+        // When / Then
+        assertThrows(IllegalArgumentException.class, () -> {
+            powerBonusScore.calculateScore(-1, 0);
+        });
+    }
+
+    @Test
+    public void powerBonusScoreShouldThrowExceptionForNegativeIncorrectCount() {
+        // Given
+        PowerBonusScore powerBonusScore = new PowerBonusScore();
+
+        // When / Then
+        assertThrows(IllegalArgumentException.class, () -> {
+            powerBonusScore.calculateScore(0, -1);
+        });
+    }G
+
 }
