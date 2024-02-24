@@ -269,6 +269,5 @@ public class GameScoreTest {
         assertThrows(IllegalArgumentException.class, () -> {
             powerBonusScore.calculateScore(0, -1);
         });
-    }G
-
+    }
 }

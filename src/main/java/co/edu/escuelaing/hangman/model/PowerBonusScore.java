@@ -2,6 +2,7 @@ package co.edu.escuelaing.hangman.model;
 
 import org.springframework.stereotype.Component;
 
+
 @Component("powerBonusScore")
 public class PowerBonusScore implements GameScore {
 
@@ -28,4 +29,6 @@ public class PowerBonusScore implements GameScore {
         score -= 8 * incorrectCount;
         return Math.min(500, Math.max(0, score));
     }
+
+
 }
