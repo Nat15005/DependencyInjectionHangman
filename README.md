@@ -103,14 +103,19 @@ principio de inversión de dependencias:
 7. Para cada clase de equivalencia y condición de frontera, implemente
    una prueba utilizando JUnit.
 
-   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/3ec657f3-7f5d-4925-95b8-9f64d14c0be2)
+   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/1b64e4ae-7d3f-459c-a8bb-d97d0b0efdca)
+   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/9f53fa8f-e946-4422-afba-56f8481416f6)
+   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/f8563d85-e3df-4bcd-a955-9e8d06e5d1f0)
+   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/279b3fdd-c426-433f-a9c1-01a47580809a)
+   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/6d537de8-53bb-461d-b383-35ba3c787001)
+   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/f5e824d5-67d6-40d8-9196-35fc1b029606)
+   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/f2aa46a2-b29e-41fc-85c6-ebeccfced952)
+   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/a9e9a164-f9d9-44f8-9b64-f2a9baa0d050)
+   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/cce5dde3-1311-466b-82c4-0763c9940c48)
+   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/d5d53117-1921-4773-8ad0-1a7b8cca1780)
 
-   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/bc68e9e6-b8f7-42c1-a3b0-35bddfda2546)
 
-   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/855f0868-64a2-4d57-aa85-ee7729549e67)
-
-
-9. Haga commit de lo realizado hasta ahora. Desde la terminal:
+8. Haga commit de lo realizado hasta ahora. Desde la terminal:
 
     ```sh		
     git add .			
@@ -120,7 +125,7 @@ principio de inversión de dependencias:
     ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/f26f2a0a-0dcc-4129-97e1-399fa7ad0cd4)
 
 
-10. Realice la implementación de los 'cascarones' realizados anteriormente.
+9. Realice la implementación de los 'cascarones' realizados anteriormente.
    Asegúrese que todas las pruebas unitarias creadas en los puntos anteriores
    se ejecutan satisfactoriamente.
 
@@ -131,25 +136,26 @@ principio de inversión de dependencias:
    ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/313c57d2-34cf-47f2-8226-3d04bf74a07a)
 
 
-11. Al finalizar haga un nuevo commit:
+10. Al finalizar haga un nuevo commit:
 
     ```sh		
     git add .			
     git commit -m "implementación del modelo"
     ```
 
-   ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/0dcdd031-4e25-44dc-8462-4eb122c1e7d9)
+      ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/0dcdd031-4e25-44dc-8462-4eb122c1e7d9)
    
 
-12. Para sincronizar el avance en el respositorio y NO PERDER el trabajo, use
+11. Para sincronizar el avance en el respositorio y NO PERDER el trabajo, use
     el comando de GIT para enviar los cambios:
 
     ```sh
     git push origin main
     ```
 
-    
+      ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/81b737ca-babc-43e2-8687-a1581794ff2d)
 
+    
 ### Parte II
 
 Actualmente se utiliza el patrón FactoryMethod
@@ -160,11 +166,54 @@ constructor de la clase GUI y HangmanFactoryMethod).
 1. Utilizando el HangmanFactoryMethod (MétodoFabrica) incluya el
    OriginalScore a la configuración.
 
+   a.
+   
+      ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/abb7168f-b8f3-485a-be76-d220b4f50ba9)
+   
+   b.
+   
+      ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/1084ade8-d34a-4849-8c7a-a1dd30cda66e)
+   
+      ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/63c0f965-3cf3-4075-af44-947fe3269d6d)
+
+   c.
+   
+      ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/bc92d347-108a-4490-8483-266b1180a4db)
+   
+      ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/0d877fd3-96f6-456f-aa65-4b7a5a8481a8)
+   
+      ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/d63837c8-7a12-4403-a38c-2e863a6d39f0)
+
+      ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/f3f3b93b-4ba8-40e4-8393-a26c1afcc2f0)
+
+   d.
+
+      ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/da9bf9d6-5c20-47e8-8ec4-0e08f6a62b1d)
+
+      ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/1079ef73-3d90-4b09-8f18-f74db61cac41)
+
+
 * Mediante la configuración de la Inyección de
   Dependencias se pueda cambiar el comportamiento del mismo, por
   ejemplo:
     * Utilizar el esquema OriginalScore.
+      
+         ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/ee9cb976-920c-4588-b49c-2a18494f1d49)
+
     * Utilizar el esquema BonusScore.
+
+         ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/b3563989-4f06-417f-b171-e4cba08d029f)
+
     * Utilizar el idioma francés.
+
+         ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/1ba53e0e-cdfb-40ec-9563-a5fbc1aa3bb0)
+      
+
     * Utilizar el diccionario francés.
+
+         ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/8035d2b6-9f30-47cc-ab15-ff26cff387ec)
+
     * etc...
+
+         ![image](https://github.com/Nat15005/DependencyInjectionHangman/assets/111907712/a7cae88a-5300-459a-b68f-f0c9b44fe69b)
+
